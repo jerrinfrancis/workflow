@@ -88,7 +88,7 @@ func TestLegacyGetTemplateNotEmpty(t *testing.T) {
 
 func TestLegacyGetProvidersRegistered(t *testing.T) {
 	providers := GetProviders()
-	for _, name := range []string{"create-config", "read-config", "list-config", "delete-config"} {
+	for _, name := range []string{"create", "read", "list", "delete"} {
 		if _, ok := providers[name]; !ok {
 			t.Errorf("legacy provider %q not registered", name)
 		}

@@ -1,7 +1,7 @@
 // config.cue
 
 #CreateConfig: {
-	#do:       "create-config"
+	#do:       "create"
 	#provider: "op"
 
 	name:      string
@@ -13,7 +13,7 @@
 }
 
 #DeleteConfig: {
-	#do:       "delete-config"
+	#do:       "delete"
 	#provider: "op"
 
 	name:      string
@@ -21,7 +21,7 @@
 }
 
 #ReadConfig: {
-	#do:       "read-config"
+	#do:       "read"
 	#provider: "op"
 
 	name:      string
@@ -31,7 +31,7 @@
 }
 
 #ListConfig: {
-	#do:       "list-config"
+	#do:       "list"
 	#provider: "op"
 
 	// Must query with the template
